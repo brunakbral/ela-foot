@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #4B783F;
+    font-weight: 600;
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #4B783F;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-family: 'Inconsolata', monospace;
+    color: rgb(73, 70, 70);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/futebol.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+ 
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+    margin: 50px;
+    padding: 30px;
+}
+
+.welcome {
+    width: 30%;
+    font-size: 25px;
+    color: rgb(73, 70, 70);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.playerData {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.playerAtributes1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+}
+
+.playerAtributes2 {
+    width: 70%;
+    height: 500px;
+    border-radius: 1rem;
+    background-color: #F7EFEF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #4B783F 1px solid;
+}
+
+.playerCard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 131);
+    border-radius: 1rem;
+    border: #4B783F 2px solid;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 400px;
+    align-items: center;
+}
+
+.photo {
+    background-image: url('../../assets/marta.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 210px;  
+    width: 160px;
+    border-radius: 1rem;
+    margin: 5px;
+}
+
+.playerSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.cabecalho {
+    background-color: rgba(211, 211, 131, 0.5);
+    margin-bottom: 10px;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.atribute {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(73, 70, 70);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.atribute h2 {
+    margin-right: 10px;
+}
+.styledButton {
+    width: 280px;
+}

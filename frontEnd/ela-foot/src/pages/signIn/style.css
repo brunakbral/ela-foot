@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+#background {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/futebol.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;  
+    justify-content: center;
+}
+
+
+
+.mainSignIn {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.8rem;
+    margin: 50px;
+    padding: 50px;
+    position: static;
+    
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#signInButton {
+    background-color: #4B783F;
+}
