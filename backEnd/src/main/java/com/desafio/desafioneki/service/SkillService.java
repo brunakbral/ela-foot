@@ -5,9 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.desafio.desafioneki.entity.Player;
 import com.desafio.desafioneki.entity.Skill;
-import com.desafio.desafioneki.repository.PlayerRepository;
 import com.desafio.desafioneki.repository.SkillRepository;
 
 @Service

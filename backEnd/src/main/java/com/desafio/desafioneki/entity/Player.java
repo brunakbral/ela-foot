@@ -10,7 +10,7 @@ public class Player {
 	private int age;
 	private double weight;
 	private double height;
-    private Skill skill;
+    private Skill player;
 	
 	public int getIdPlayer() {
 		return idPlayer;
@@ -61,10 +61,10 @@ public class Player {
 		this.height = height;
 	}
 	public Skill getSkill() {
-		return skill;
+		return player;
 	}
-	public void setSkill(Skill skill) {
-		this.skill = skill;
+	public void setSkill(Skill player) {
+		this.player = player;
 	}
     
 }
