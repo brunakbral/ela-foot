@@ -8,17 +8,29 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import style from "./style.css";
 
 export default function SignIn() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
+  const [emailDigitado, setEmailDigitado] = useState("");
+  const [senhaDigitada, setSenhaDigitada] = useState("");
+
+  const login = "admin";
+  const password = "admin";
+
+  const navigate = useNavigate();
+
+  function handleSubmit() {
+    if (emailDigitado === login && senhaDigitada === password) {
+      alert("Login efetuado com sucesso!");
+      navigate("/home");
+      //navigate to home
+
+    } else {
+      alert("Email ou senha incorretos!");
+    }
+  }
 
   return (
     <div id="background">
@@ -49,6 +61,8 @@ export default function SignIn() {
               label="Email "
               name="email"
               autoComplete="email"
+              value={emailDigitado}
+              onChange={(event) => setEmailDigitado(event.target.value)}
               autoFocus
             />
             <TextField
@@ -59,6 +73,8 @@ export default function SignIn() {
               label="Senha"
               type="password"
               id="password"
+              value={senhaDigitada}
+              onChange={(event) => setSenhaDigitada(event.target.value)}
               autoComplete="current-password"
             />
             <FormControlLabel
@@ -69,6 +85,7 @@ export default function SignIn() {
               type="submit"
               fullWidth
               variant="contained"
+              onClick={handleSubmit}
               sx={{ mt: 3, mb: 2 }}
             >Entrar
             </Button>
